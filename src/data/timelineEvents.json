@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2023-12-31",
+    "type": "ACCOUNTING_PERIOD_END",
+    "priority": "LOW",
+    "description": "Accounting 2023 period end"
+  },
+  {
+    "date": "2024-03-31",
+    "label": "VAT_PERIOD_END",
+    "priority": "LOW",
+    "description": "VAT period Q1/2024 end"
+  },
+  {
+    "date": "2024-05-12",
+    "label": "VAT_PERIOD_REPORTING_DUE",
+    "priority": "HIGH",
+    "description": "VAT period Q1/2024 reporting due"
+  },
+  {
+    "date": "2024-05-20",
+    "label": "BANK_INTEGRATION_RENEWAL",
+    "priority": "MODERATE",
+    "description": "Bank integration renewal"
+  },
+  {
+    "date": "2024-06-30",
+    "label": "VAT_PERIOD_END",
+    "priority": "LOW",
+    "description": "VAT period Q2/2024 end"
+  },
+  {
+    "date": "2024-06-30",
+    "label": "ACCOUNTING_PERIOD_REPORTING_DUE",
+    "priority": "HIGH",
+    "description": "Accounting period 2023 reporting due"
+  },
+  {
+    "date": "2024-08-12",
+    "label": "VAT_PERIOD_REPORTING_DUE",
+    "priority": "HIGH",
+    "description": "VAT period Q2/2024 reporting due"
+  },
+  {
+    "date": "2024-08-20",
+    "label": "BANK_INTEGRATION_RENEWAL",
+    "priority": "MODERATE",
+    "description": "Bank integration renewal"
+  },
+  {
+    "date": "2024-09-30",
+    "label": "VAT_PERIOD_END",
+    "priority": "LOW",
+    "description": "VAT period Q3/2024 end"
+  },
+  {
+    "date": "2024-11-12",
+    "label": "VAT_PERIOD_REPORTING_DUE",
+    "priority": "HIGH",
+    "description": "VAT period Q3/2024 reporting due"
+  },
+  {
+    "date": "2024-11-20",
+    "label": "BANK_INTEGRATION_RENEWAL",
+    "priority": "MODERATE",
+    "description": "Bank integration renewal"
+  },
+  {
+    "date": "2024-12-31",
+    "type": "ACCOUNTING_PERIOD_END",
+    "priority": "LOW",
+    "description": "Accounting period 2024 end"
+  }
+]

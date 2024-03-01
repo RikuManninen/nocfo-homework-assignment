@@ -1,0 +1,279 @@
+import { Meta } from '@storybook/blocks'
+
+import NocfoImg from './assets/nocfo.svg'
+
+export const RightArrow = () => (
+  <svg
+    viewBox="0 0 14 14"
+    width="8px"
+    height="14px"
+    style={{
+      marginLeft: '4px',
+      display: 'inline-block',
+      shapeRendering: 'inherit',
+      verticalAlign: 'middle',
+      fill: 'currentColor',
+      'path fill': 'currentColor'
+    }}
+  >
+    <path d="m11.1 7.35-5.5 5.5a.5.5 0 0 1-.7-.7L10.04 7 4.9 1.85a.5.5 0 1 1 .7-.7l5.5 5.5c.2.2.2.5 0 .7Z" />
+  </svg>
+)
+
+<Meta title="NOCFO homework instructions" />
+
+<div className="sb-container">
+    <img src={NocfoImg} style={{ maxWidth: 200, marginLeft: -6 }}/>
+    <div className='sb-section-title'>
+        # Homework assignment
+
+        Hi there, and thank you for your interest in our company! You're welcome to begin the assignment immediately. However, if you'd like, you have the option to explore the following resources to better acquaint yourself. Please note, utilizing these resources is entirely optional and not a requirement for the assignment.
+    </div>
+
+    <div className="sb-section-title">
+        ## Optional resources
+    </div>
+    <div className="sb-section">
+
+        <div className="sb-section-item">
+            <span className="emoji">🧭</span>
+        <h4 className="sb-section-item-heading">NOCFO website</h4>
+        <p className="sb-section-item-paragraph">Our website should give you a quick overview who we are and what we are doing.</p>
+        <a
+            href="https://nocfo.io"
+            target="_blank"
+        >Show me<RightArrow /></a>
+        </div>
+
+        <div className="sb-section-item">
+            <span className="emoji">🧑‍🔬</span>
+          <h4 className="sb-section-item-heading">NOCFO sandbox environment</h4>
+          <p className="sb-section-item-paragraph">Feel free to test our application safely in our test environment</p>
+          <a
+            href="https://app-tst.nocfo.io"
+            target="_blank"
+          >Check it out<RightArrow /></a>
+        </div>
+
+          <div className="sb-section-item">
+              <span className="emoji">📘</span>
+          <h4 className="sb-section-item-heading">NOCFO documentation</h4>
+          <p className="sb-section-item-paragraph">Our documentation can help you to understand our product better</p>
+          <a
+            href="https://docs.nocfo.io"
+            target="_blank"
+          >Go to docs<RightArrow /></a>
+        </div>
+
+  </div>
+</div>
+<div className="sb-container">
+  <div className='sb-section-title'>
+      # Assignment instructions
+
+      As you probably know at this point, our product is a modern and user-friendly accounting application for small businesses and associations. We want to offer an alternative to the model where a business must have its own accountant.
+
+      Doing the accounting itself is not difficult, and we want to encourage it in every possible way. One of the most common reasons entrepreneurs hesitate to do their own accounting is the fear of making mistakes regarding their legal obligations. These obligations include preparing the financial statements on time, reporting the financial statements, tax returns, and their reporting, among others.
+
+      We aim to lower this threshold by reminding entrepreneurs of their legal obligations and other tasks. For this purpose, you will be tasked with developing <b>a timeline component for the business dashboard</b>. This is a real-world problem, and there is no single correct answer for its solution. Your task is to design what the component will look like, what it will contain, and how it will function. Mock data (data our API would return) for the timeline component is already prepared and can be found in src/data/timelineEvents.js. It's up to you to decide which data fields to use and how to display them.
+
+      ## ⭐ Starting point
+
+        * Placeholder component is already created in the project. You can find it in `src/components/Timeline.js`. It is also [imported to Storybook](/story/components-timeline--primary).
+        * Mock data for the timeline component is already prepared and can be found in `src/data/timelineEvents.js`.
+
+      ## ⚖️ Guidelines and rules
+
+        * The [placeholder component](/story/components-timeline--primary) has already been defined within Storybook. Your task is to finalize that component, so for the submission, the component within Storybook is enough.
+        * You are allowed to install any library or tool you need, but we would like to see your own code as much as possible.
+        * You are allowed to use plain CSS or any CSS framework or library you want.
+        * You are allowed to use either JavaScript or TypeScript. Project is initialized with JavaScript.
+        * You are allowed to modify the existing codebase as you see fit.
+        * It is enough to have a working component inside Storybook.
+
+      ## 📝 Definition of Done
+
+        * The component should look nice and align with the overall look and feel of our application.
+        * The component must be responsive, meaning it should look good on both desktop and mobile devices.
+        * The component should be easily reusable.
+        * Code should be clear and maintainable
+
+      ## 📦 Deliverables
+
+      Deliver a link to your public GitHub repository with the solution. The link can be delivered to us via email at <a href="mailto:kiira.ojala@atalent.fi?subject=NOCFO homework deliverable&body=Here is the link to my GitHub repository: <PASTE LINK HERE>">kiira.ojala@atalent.fi</a>. We will review your work and get back to you as soon as possible. **Deadline for the assignment is on Monday 4.3.2024 at 8:00.**
+
+      <b>Best of luck with the assignment!</b>
+
+  </div>
+
+</div>
+
+<style>
+  {`
+
+  .sb-container {
+    margin-bottom: 48px;
+  }
+
+  p, li {
+    font-size: 16px !important;
+  }
+
+  .sb-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  .sb-section-title {
+    margin-bottom: 32px;
+  }
+
+  .sb-section a:not(h1 a, h2 a, h3 a) {
+    font-size: 14px;
+  }
+
+  .sb-section-item, .sb-grid-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sb-section-item-heading {
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+  }
+  .sb-section-item-paragraph {
+    margin: 0;
+    padding-bottom: 10px;
+    padding-right: 4rem;
+    min-height: 80px;
+  }
+
+  .sb-chevron {
+    margin-left: 5px;
+  }
+
+  .sb-features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 32px 20px;
+  }
+
+  .sb-socials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .sb-socials p {
+    margin-bottom: 10px;
+  }
+
+  .sb-explore-image {
+    max-height: 32px;
+    align-self: flex-start;
+  }
+
+  .sb-addon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #EEF3F8;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #EEF3F8;
+    height: 180px;
+    margin-bottom: 48px;
+    overflow: hidden;
+  }
+
+  .sb-addon-text {
+    padding-left: 48px;
+    max-width: 240px;
+  }
+
+  .sb-addon-text h4 {
+    padding-top: 0px;
+  }
+
+  .sb-addon-img {
+    position: absolute;
+    left: 345px;
+    top: 0;
+    height: 100%;
+    width: 200%;
+    overflow: hidden;
+  }
+
+  .sb-addon-img img {
+    width: 650px;
+    transform: rotate(-15deg);
+    margin-left: 40px;
+    margin-top: -72px;
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+    backface-visibility: hidden;
+  }
+
+  @media screen and (max-width: 800px) {
+    .sb-addon-img {
+      left: 300px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .sb-section {
+      flex-direction: column;
+    }
+
+    .sb-features-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sb-socials {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sb-addon {
+      height: 280px;
+      align-items: flex-start;
+      padding-top: 32px;
+      overflow: hidden;
+    }
+
+    .sb-addon-text {
+      padding-left: 24px;
+    }
+
+    .sb-addon-img {
+      right: 0;
+      left: 0;
+      top: 130px;
+      bottom: 0;
+      overflow: hidden;
+      height: auto;
+      width: 124%;
+    }
+
+    .sb-addon-img img {
+      width: 1200px;
+      transform: rotate(-12deg);
+      margin-left: 0;
+      margin-top: 48px;
+      margin-bottom: -40px;
+      margin-left: -24px;
+    }
+
+  }
+
+  .emoji {
+    font-size: 3em;
+  }
+  `}
+</style>
