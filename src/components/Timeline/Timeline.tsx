@@ -194,9 +194,9 @@ export const Timeline = ({ items }) => {
       </TimelineHeader>
       <div style={{ padding: '0 0 1em 0' }}>
         <TimelineFilterContainer>
-          <TimelineFilter className="selected">High</TimelineFilter>
-          <TimelineFilter>Moderate</TimelineFilter>
-          <TimelineFilter>Low</TimelineFilter>
+          <FilterInput type="radio" name="filter" id='high' /><TimelineFilter htmlFor="high">High</TimelineFilter>
+          <FilterInput type="radio" name="filter" id='moderate' /><TimelineFilter htmlFor="moderate">Moderate</TimelineFilter>
+          <FilterInput type="radio" name="filter" id='low' /><TimelineFilter htmlFor="low">Low</TimelineFilter>
         </TimelineFilterContainer>
         <TimelineFilterContainer>
           <TimelineFilter>Accounting Period End</TimelineFilter>
@@ -265,6 +265,14 @@ export const Timeline = ({ items }) => {
     </TimelineContainer>
   )
 }
+
+const FilterInput = styled.input`
+  display: none;
+  &:checked + label {
+    background: rgb(27, 152, 245);
+    color: white;
+  }
+`
 
 const StyledItem = styled.div`
   display: flex;
@@ -458,7 +466,7 @@ const TimelineItem = styled.div`
     visibility: visible;
   }
 `
-const TimelineFilter = styled.div`
+const TimelineFilter = styled.label`
   color: rgb(66, 90, 112);
   background: rgb(240, 242, 245);
   position: relative;
